@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* Script original du site, repris tel quel. */
 export function initGoelette() {
 (function(){
