@@ -6,9 +6,9 @@ import { initGoelette } from "@/goelette/init";
 import "@/goelette/goelette.css";
 
 const TITLE =
-  "La Goélette — Restaurant & brasserie à L'Aiguillon-sur-Mer (Vendée)";
+  "La Goëlette — Restaurant & brasserie à L'Aiguillon-sur-Mer (Vendée)";
 const DESCRIPTION =
-  "La Goélette, brasserie familiale au cœur de L'Aiguillon-sur-Mer : huîtres n°3 de L'Aiguillon, moules de bouchot marinière, poissons, viandes, Goëlette Burger, menu du midi à 20,50 €. Terrasse. Réservation au 02 51 27 64 88.";
+  "La Goëlette, brasserie familiale au cœur de L'Aiguillon-sur-Mer : huîtres n°3 de L'Aiguillon, moules de bouchot marinière, poissons, viandes, Goëlette Burger, menu du midi à 20,50 €. Terrasse. Réservation au 02 51 27 64 88.";
 const OG_DESCRIPTION =
   "Une escale gourmande au cœur de L'Aiguillon-sur-Mer. Huîtres, moules de bouchot, poissons, viandes, burgers. Terrasse et ambiance familiale.";
 
@@ -22,10 +22,10 @@ export const Route = createFileRoute("/")({
       { name: "geo.region", content: "FR-PDL" },
       { property: "og:type", content: "restaurant" },
       { property: "og:locale", content: "fr_FR" },
-      { property: "og:site_name", content: "La Goélette" },
+      { property: "og:site_name", content: "La Goëlette" },
       {
         property: "og:title",
-        content: "La Goélette — Restaurant & brasserie à L'Aiguillon-sur-Mer",
+        content: "La Goëlette — Restaurant & brasserie à L'Aiguillon-sur-Mer",
       },
       { property: "og:description", content: OG_DESCRIPTION },
       { name: "twitter:card", content: "summary_large_image" },
