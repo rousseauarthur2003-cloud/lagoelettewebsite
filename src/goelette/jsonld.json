@@ -1,0 +1,67 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "La Goélette",
+  "description": "Brasserie familiale au cœur de L'Aiguillon-sur-Mer, en Vendée : huîtres n°3 de L'Aiguillon, moules de bouchot, poissons, viandes, Goëlette Burger, salades et menu du midi. Terrasse.",
+  "url": "https://www.votre-domaine.fr/",
+  "telephone": "+33251276488",
+  "priceRange": "€€",
+  "currenciesAccepted": "EUR",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "29 rue Jacques Moreau",
+    "postalCode": "85460",
+    "addressLocality": "L'Aiguillon-sur-Mer",
+    "addressRegion": "Vendée",
+    "addressCountry": "FR"
+  },
+  "servesCuisine": ["Française", "Brasserie", "Fruits de mer", "Poissons", "Burgers"],
+  "areaServed": ["L'Aiguillon-sur-Mer", "L'Aiguillon-la-Presqu'île", "La Faute-sur-Mer", "Vendée"],
+  "acceptsReservations": "https://www.votre-domaine.fr/#reserver",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Wednesday","Thursday","Saturday"], "opens": "08:00", "closes": "22:00", "validThrough": "2026-08-29" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Friday"], "opens": "07:00", "closes": "22:00", "validThrough": "2026-08-29" }
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Carte de La Goélette",
+    "hasMenuSection": [
+      { "@type": "MenuSection", "name": "À partager", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Planche de charcuterie", "offers": { "@type": "Offer", "price": "12.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Planche de fromage", "offers": { "@type": "Offer", "price": "12.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Trio de rillettes de la mer", "offers": { "@type": "Offer", "price": "12.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Huîtres n°3 de L'Aiguillon, perles de yuzu", "offers": { "@type": "Offer", "price": "12.90", "priceCurrency": "EUR" } }
+      ]},
+      { "@type": "MenuSection", "name": "Entrées", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Terrine de campagne", "offers": { "@type": "Offer", "price": "5.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Coquille Saint-Jacques à la bretonne", "offers": { "@type": "Offer", "price": "6.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Tartare de saumon, gelée de citron", "offers": { "@type": "Offer", "price": "8.90", "priceCurrency": "EUR" } }
+      ]},
+      { "@type": "MenuSection", "name": "Salade & végétal", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Salade César, volaille, parmesan, croûtons, œuf poché", "offers": { "@type": "Offer", "price": "16.20", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Salade burrata, tomates, basilic", "offers": { "@type": "Offer", "price": "16.20", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Salade saumon, citron, ciboulette, crème chantilly", "offers": { "@type": "Offer", "price": "17.20", "priceCurrency": "EUR" } }
+      ]},
+      { "@type": "MenuSection", "name": "Poissons", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Pavé de saumon, sauce beurre blanc, riz", "offers": { "@type": "Offer", "price": "20.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Filet de limande meunière, écrasé de pomme de terre à l'huile d'olive", "offers": { "@type": "Offer", "price": "15.90", "priceCurrency": "EUR" } }
+      ]},
+      { "@type": "MenuSection", "name": "Moules", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Moules de bouchot, marinière traditionnelle au vin blanc, échalotes et persil, frites", "offers": { "@type": "Offer", "price": "15.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Moules au chorizo, sauce tomate légèrement épicée, frites", "offers": { "@type": "Offer", "price": "17.90", "priceCurrency": "EUR" } }
+      ]},
+      { "@type": "MenuSection", "name": "Viandes", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Bavette d'aloyau grillée, beurre d'échalotes, frites, salade", "offers": { "@type": "Offer", "price": "19.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Goëlette Burger, frites", "offers": { "@type": "Offer", "price": "15.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Andouillette ficelle artisanale de Bretagne, sauce moutarde à l'ancienne, frites", "offers": { "@type": "Offer", "price": "22.90", "priceCurrency": "EUR" } },
+        { "@type": "MenuItem", "name": "Filet de bœuf et son jus de viande, écrasé de pommes de terre", "offers": { "@type": "Offer", "price": "26.90", "priceCurrency": "EUR" } }
+      ]},
+      { "@type": "MenuSection", "name": "Menu du midi", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Entrée à l'ardoise, plat à l'ardoise, café mignardises", "offers": { "@type": "Offer", "price": "20.50", "priceCurrency": "EUR" } }
+      ]},
+      { "@type": "MenuSection", "name": "Menu enfant", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Menu enfant jusqu'à 12 ans", "offers": { "@type": "Offer", "price": "9.90", "priceCurrency": "EUR" } }
+      ]}
+    ]
+  }
+}
