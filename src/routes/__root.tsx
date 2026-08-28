@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "La Goëlette – Restaurant à L'Aiguillon-sur-Mer" },
+      { name: "description", content: "La Goëlette, restaurant et brasserie à L'Aiguillon-sur-Mer en Vendée. Découvrez notre cuisine maison, nos produits de la mer et réservez votre table." },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Lovable App" },
       { property: "og:description", content: "Lovable Generated Project" },
