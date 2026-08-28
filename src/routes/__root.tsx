@@ -1,4 +1,4 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+Voici le code : import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   Link,
@@ -17,9 +17,7 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">
-          Page not found
-        </h2>
+        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           The page you're looking for doesn't exist or has been moved.
         </p>
@@ -36,20 +34,11 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({
-  error,
-  reset,
-}: {
-  error: Error;
-  reset: () => void;
-}) {
+function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-
   useEffect(() => {
-    reportLovableError(error, {
-      boundary: "tanstack_root_error_component",
-    });
+    reportLovableError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
 
   return (
@@ -59,8 +48,7 @@ function ErrorComponent({
           This page didn't load
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Something went wrong on our end. You can try refreshing or head back
-          home.
+          Something went wrong on our end. You can try refreshing or head back home.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
@@ -72,7 +60,6 @@ function ErrorComponent({
           >
             Try again
           </button>
-
           <a
             href="/"
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
@@ -85,81 +72,38 @@ function ErrorComponent({
   );
 }
 
-export const Route =
-  createRootRouteWithContext<{ queryClient: QueryClient }>()({
-    head: () => ({
-      meta: [
-        { charSet: "utf-8" },
-
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1",
-        },
-
-        {
-          title: "La Goëlette | Restaurant à L'Aiguillon-sur-Mer",
-        },
-
-        {
-          name: "description",
-          content:
-            "Restaurant La Goëlette à L'Aiguillon-sur-Mer : cuisine maison, produits de la mer et ambiance conviviale. Réservez votre table en ligne.",
-        },
-
-        {
-          name: "author",
-          content: "La Goëlette",
-        },
-
-        {
-          property: "og:title",
-          content: "La Goëlette | Restaurant à L'Aiguillon-sur-Mer",
-        },
-
-        {
-          property: "og:description",
-          content:
-            "Cuisine maison, produits de la mer et ambiance conviviale à L'Aiguillon-sur-Mer. Réservez votre table à La Goëlette.",
-        },
-
-        {
-          property: "og:type",
-          content: "website",
-        },
-
-        {
-          name: "twitter:card",
-          content: "summary_large_image",
-        },
-      ],
-
-      links: [
-        {
-          rel: "stylesheet",
-          href: appCss,
-        },
-
-        {
-          rel: "icon",
-          href: "/favicon.ico",
-          type: "image/x-icon",
-        },
-      ],
-    }),
-
-    shellComponent: RootShell,
-    component: RootComponent,
-    notFoundComponent: NotFoundComponent,
-    errorComponent: ErrorComponent,
-  });
+export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  head: () => ({
+    meta: [
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { title: "La Goëlette" },
+      { name: "description", content: "restaurant type brasserie situé à l'Aiguillon sur mer" },
+      { name: "author", content: "La Goëlette" },
+      { property: "og:title", content: "La Goëlette" },
+      { property: "og:description", content: "restaurant type brasserie situé à l'Aiguillon sur mer" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      {
+        rel: "stylesheet",
+        href: appCss,
+      },
+      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+    ],
+  }),
+  shellComponent: RootShell,
+  component: RootComponent,
+  notFoundComponent: NotFoundComponent,
+  errorComponent: ErrorComponent,
+});
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <head>
         <HeadContent />
       </head>
-
       <body>
         {children}
         <Scripts />
