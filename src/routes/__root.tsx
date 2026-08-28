@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "La Goëlette" },
-      { name: "description", content: "restaurant type brasserie situé à l'Aiguillon sur mer" },
+      { title: "La Goëlette – Restaurant à L'Aiguillon-sur-Mer" },
+      { name: "description", content: "La Goëlette, restaurant et brasserie à L'Aiguillon-sur-Mer en Vendée. Découvrez notre cuisine maison, nos produits de la mer et réservez votre table." },
       { name: "author", content: "La Goëlette" },
       { property: "og:title", content: "La Goëlette" },
       { property: "og:description", content: "restaurant type brasserie situé à l'Aiguillon sur mer" },
