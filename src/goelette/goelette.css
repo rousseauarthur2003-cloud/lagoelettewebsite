@@ -253,6 +253,10 @@ p{margin:0 0 1.05em}
 .plat-txt h3{font-size:1.12rem;color:var(--vert);margin-bottom:.45rem}
 .plat-txt p{font-size:.92rem;color:var(--gris);flex:1;margin-bottom:.9rem}
 .plat-txt .p-prix{font-size:1.3rem}
+.plat-carte:nth-child(2),
+.plat-carte:nth-child(3) {
+  display: none;
+}
 
 /* ═══════════  TERRASSE / ESPRIT  ═══════════ */
 .terrasse{background:var(--marine);color:var(--creme)}
