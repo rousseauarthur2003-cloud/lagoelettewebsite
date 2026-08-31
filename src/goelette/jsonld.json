@@ -29,7 +29,7 @@
   "areaServed": ["L'Aiguillon-sur-Mer", "L'Aiguillon-la-Presqu'île", "La Faute-sur-Mer", "Vendée"],
   "acceptsReservations": "https://book.squareup.com/appointments/ikwme6p7e06f9h/location/LJPKCPFFXM5QF/services",
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "17:00" }
   ],
   "hasMenu": {
     "@type": "Menu",
