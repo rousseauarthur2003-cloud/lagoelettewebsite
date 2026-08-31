@@ -4,6 +4,11 @@
   "name": "La Goëlette",
   "description": "Brasserie familiale au cœur de L'Aiguillon-sur-Mer, en Vendée : huîtres n°3 de L'Aiguillon, moules de bouchot, poissons, viandes, Goëlette Burger, salades et menu du midi. Terrasse.",
   "url": "https://www.restaurantlagoelette.fr",
+  "logo": "https://www.restaurantlagoelette.fr/favicon.ico",
+  "sameAs": [
+  "https://www.instagram.com/lagoelette.aiguillon",
+  "https://www.facebook.com/lagoelette85/?locale=fr_FR"
+],
   "telephone": "+33251276488",
   "priceRange": "€€",
   "currenciesAccepted": "EUR",
@@ -15,12 +20,16 @@
     "addressRegion": "Vendée",
     "addressCountry": "FR"
   },
+  "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 46.3344722,
+  "longitude": -1.3070833
+},
   "servesCuisine": ["Française", "Brasserie", "Fruits de mer", "Poissons", "Burgers"],
   "areaServed": ["L'Aiguillon-sur-Mer", "L'Aiguillon-la-Presqu'île", "La Faute-sur-Mer", "Vendée"],
-  "acceptsReservations": "https://www.votre-domaine.fr/#reserver",
+  "acceptsReservations": "https://book.squareup.com/appointments/ikwme6p7e06f9h/location/LJPKCPFFXM5QF/services",
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Wednesday","Thursday","Saturday"], "opens": "08:00", "closes": "22:00", "validThrough": "2026-08-29" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Friday"], "opens": "07:00", "closes": "22:00", "validThrough": "2026-08-29" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "17:00" },
   ],
   "hasMenu": {
     "@type": "Menu",
