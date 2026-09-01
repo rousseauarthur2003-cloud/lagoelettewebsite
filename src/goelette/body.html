@@ -740,3 +740,99 @@
   <button class="fermer" id="lbFermer" aria-label="Fermer">×</button>
   <img id="lbImg" src="" alt="Carte de La Goëlette en grand format">
 </div>
+/* ═══════════ NOTE GOOGLE ═══════════ */
+
+.avis-entete {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.avis-note {
+  border-left: 1px solid rgba(28, 58, 44, 0.18);
+  padding-left: 3.2rem;
+  min-width: 330px;
+}
+
+.avis-note-top {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.avis-score {
+  font-family: "Playfair Display", serif;
+  font-size: 5.5rem;
+  line-height: 1;
+  color: #b27a2c;
+  font-weight: 600;
+}
+
+.avis-etoiles {
+  font-size: 2.6rem;
+  letter-spacing: 0.12rem;
+  color: #b27a2c;
+  white-space: nowrap;
+}
+
+/* Dernière étoile partiellement remplie */
+.etoile-demi {
+  background: linear-gradient(
+    90deg,
+    #b27a2c 40%,
+    rgba(178, 122, 44, 0.22) 40%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.avis-nombre {
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+  margin: 0.6rem 0 1.5rem;
+  color: #30443a;
+}
+
+.avis-note .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.avis-note .btn strong {
+  font-size: 1.35rem;
+  font-family: Arial, sans-serif;
+}
+
+/* ═══════════ RESPONSIVE ═══════════ */
+
+@media (max-width: 800px) {
+  .avis-entete {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .avis-note {
+    border-left: 0;
+    border-top: 1px solid rgba(28, 58, 44, 0.18);
+    padding-left: 0;
+    padding-top: 2rem;
+    min-width: 0;
+  }
+
+  .avis-note-top {
+    gap: 1rem;
+  }
+
+  .avis-score {
+    font-size: 4.5rem;
+  }
+
+  .avis-etoiles {
+    font-size: 2rem;
+  }
+}
