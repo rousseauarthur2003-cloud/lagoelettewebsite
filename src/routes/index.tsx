@@ -43,10 +43,23 @@ export const Route = createFileRoute("/")({
         href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Parisienne&display=swap",
       },
     ],
+    
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify(jsonLd),
+      },
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-C9HGQ6DHK6",
+        async: true,
+      },
+      {
+        children: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-C9HGQ6DHK6');
+        `,
       },
     ],
   }),
