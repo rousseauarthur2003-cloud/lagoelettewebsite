@@ -1,7 +1,7 @@
 /* ═══════════  TOKENS — repris de la carte et de l'enseigne  ═══════════ */
 :root{
-  --vert:#1C3A2C;        /* vert profond des titres de la carte */
-  --vert-2:#2C5340;
+  --bleu:#131B41;        /* bleu profond des titres de la carte */
+  --bleu-2:#24306A;
   --or:#A87A3C;          /* or bronze de la carte */
   --or-clair:#C9A063;
   --creme:#F7F2E7;       /* fond crème de la carte */
